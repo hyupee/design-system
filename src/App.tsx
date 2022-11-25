@@ -1,32 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Typography } from './components/Typography/Typography'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Typography as='p' size='xs' weight='light'>Typography</Typography>
+      <Typography as='p' size='xs' weight='regular'>Typography</Typography>
+      <Typography as='p' size='xs' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='xs' weight='bold'>Typography</Typography>
+
+      <Typography as='p' size='sm' weight='light'>Typography</Typography>
+      <Typography as='p' size='sm' weight='regular'>Typography</Typography>
+      <Typography as='p' size='sm' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='sm' weight='bold'>Typography</Typography>
+
+      <Typography as='p' size='md' weight='light'>Typography</Typography>
+      <Typography as='p' size='md' weight='regular'>Typography</Typography>
+      <Typography as='p' size='md' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='md' weight='bold'>Typography</Typography>
+
+      <Typography as='p' size='lg' weight='light'>Typography</Typography>
+      <Typography as='p' size='lg' weight='regular'>Typography</Typography>
+      <Typography as='p' size='lg' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='lg' weight='bold'>Typography</Typography>
+
+      <Typography as='p' size='xl' weight='light'>Typography</Typography>
+      <Typography as='p' size='xl' weight='regular'>Typography</Typography>
+      <Typography as='p' size='xl' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='xl' weight='bold'>Typography</Typography>
+
+      <Typography as='p' size='xxl' weight='light'>Typography</Typography>
+      <Typography as='p' size='xxl' weight='regular'>Typography</Typography>
+      <Typography as='p' size='xxl' weight='semiBold'>Typography</Typography>
+      <Typography as='p' size='xxl' weight='bold'>Typography</Typography>
     </div>
   )
 }
